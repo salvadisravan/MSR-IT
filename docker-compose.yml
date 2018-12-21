@@ -1,0 +1,9 @@
+version: '2.0'
+services:
+  web:
+    image: apache
+    build: /root/GIT/
+    container_name: apache_web
+    restart: always
+    ports:
+      - "8080:80"
